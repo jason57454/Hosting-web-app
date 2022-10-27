@@ -1,0 +1,30 @@
+.transactions_table th {
+  width: 300px;
+}
+
+.transactions_table th {
+  color: var(--clr-light-blue);
+  font-size: 1.2rem;
+}
+
+.transactions_table td {
+  color: var(--clr-white);
+  padding: 30px 0 0 0;
+}
+
+/* RESPONSIVE TRANSACTIONS */
+
+@media screen and (max-width: 1160px) {
+  .transactions_table {
+    white-space: nowrap;
+    overflow-x: scroll;
+  }
+
+  .transactions_table td {
+    padding: 30px 10px 0 10px;
+  }
+
+  .transactions_table th {
+    padding: 0 10px;
+  }
+}

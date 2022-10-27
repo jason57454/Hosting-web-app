@@ -1,0 +1,93 @@
+.col_71 {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: var(--clr-light-bg);
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.col_72 {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.col_72 p:nth-child(1) {
+  font-size: 1.5rem;
+  color: var(--clr-light-blue);
+  margin-bottom: 20px;
+}
+
+.col_72 p:nth-child(2) {
+  font-size: 2rem;
+  color: white;
+  font-weight: 700;
+}
+
+.content_col_71 {
+  margin-bottom: 20px;
+}
+
+.content_col_71 p {
+  color: var(--clr-white);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.deposit {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.deposit input {
+  margin-bottom: 10px;
+  height: 40px;
+  border-color: transparent;
+  padding: 8px;
+  background-color: var(--clr-light-blue);
+  font-size: 1.2rem;
+  color: var(--clr-white);
+  text-align: center;
+  outline: none;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.deposit a {
+  width: 100%;
+  background: var(--clr-blue-btn);
+  padding: 8px 30px;
+}
+
+.deposit p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* RESPONSIVE DEPOSIT */
+
+@media screen and (max-width: 550px) {
+  .col_71 {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .col_71 {
+    width: 100%;
+  }
+
+  .col_72 p {
+    text-align: center;
+  }
+}

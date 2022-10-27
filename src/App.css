@@ -1,0 +1,157 @@
+/* ROOT SETTINGS */
+
+:root {
+  --clr-white: white;
+  --clr-gray: #b9bbbe;
+  --clr-light-blue: #7d92ac;
+  --clr-blue-btn: #0d6efd;
+  --clr-purple: #7f63f2;
+  --clr-green: #1dc16d;
+  --clr-border: #273b53;
+  --clr-bg: #0d141d;
+  --clr-light-bg: #141c26;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* GENERAL SETTINGS */
+
+.screen_height {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--clr-bg);
+  display: flex;
+  flex-direction: column;
+}
+
+.screen_height section {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: var(--clr-bg);
+}
+
+img,
+a {
+  user-select: none;
+}
+
+.select_none {
+  user-select: none;
+}
+
+.container_1 {
+  padding: 0 0 0 300px;
+}
+
+.col_23 {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+/* TITLE SETTINGS */
+
+.main_title {
+  margin-bottom: 40px;
+}
+
+.main_title h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--clr-white);
+  margin-bottom: 10px;
+}
+
+.main_title p {
+  font-size: 1.3rem;
+  color: var(--clr-gray);
+}
+
+.back {
+  color: var(--clr-light-blue);
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.fa_left {
+  margin-right: 10px;
+}
+
+/* TABLE SETTINGS */
+
+table {
+  text-align: left;
+  background: var(--clr-light-bg);
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.scroll_table {
+  display: flex;
+  width: 100%;
+}
+
+/* INPUT SETTINGS */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input {
+  border-color: transparent;
+}
+
+/* RESPONSIVE CSS */
+
+@media screen and (max-width: 1490px) {
+  .container_1 {
+    padding-left: 210px;
+  }
+
+  .col_23 {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 1410px) {
+  .container_1 {
+    padding-left: 0;
+  }
+}
+
+/* RESPONSIVE TABLE */
+
+@media screen and (max-width: 1160px) {
+  .scroll_table {
+    overflow-x: scroll;
+  }
+}
+
+/* TITLE RESPONSIVE */
+
+@media screen and (max-width: 550px) {
+  .main_title {
+    margin-bottom: 0px;
+  }
+
+  .main_title p {
+    margin-bottom: 40px;
+  }
+}
+
+/* PREVIOUS PAGE RESPONSIVE */
+@media screen and (max-width: 550px) {
+  .back {
+    margin-bottom: 40px;
+  }
+}

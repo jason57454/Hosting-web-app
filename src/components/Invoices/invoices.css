@@ -1,0 +1,104 @@
+.row_45 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  width: fit-content;
+}
+
+.invoices_table thead {
+  text-align: left;
+}
+
+.invoices_table th {
+  color: var(--clr-light-blue);
+  font-size: 1.2rem;
+}
+
+.invoices_table td {
+  padding: 30px 0 0 0;
+}
+
+.invoices_table tr {
+  vertical-align: bottom;
+}
+
+.ref {
+  color: var(--clr-purple);
+  font-size: 1.2rem;
+}
+
+.service_order {
+  display: flex;
+}
+
+.service_order p {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.date {
+  font-size: 1.2rem;
+  color: var(--clr-light-blue);
+}
+
+.amount {
+  color: var(--clr-white);
+  font-size: 1.2rem;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  color: var(--clr-green);
+}
+
+.status span {
+  display: flex;
+  width: 10px;
+  height: 10px;
+  background: var(--clr-green);
+  border-radius: 99%;
+  margin-right: 15px;
+}
+
+.show_invoice {
+  font-size: 1.2rem;
+  color: var(--clr-purple);
+  cursor: pointer;
+}
+
+.fa_show {
+  width: 20px;
+  height: 20px;
+  color: var(--clr-purple);
+  margin-right: 15px;
+}
+
+.fa_serv {
+  width: 15px;
+  height: 15px;
+  color: var(--clr-purple);
+  margin-right: 15px;
+}
+
+.white {
+  color: var(--clr-white) !important;
+}
+
+/* RESPONSIVE CSS */
+
+@media screen and (max-width: 1160px) {
+  .invoices_table {
+    white-space: nowrap;
+    overflow-x: scroll;
+  }
+
+  .invoices_table td {
+    padding: 30px 10px 0 10px;
+  }
+
+  .invoices_table th {
+    padding: 0 10px;
+  }
+}

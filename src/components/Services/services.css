@@ -1,0 +1,36 @@
+.services_table {
+  background: #141c26;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.services_table thead {
+  text-align: left;
+}
+
+.services_table th {
+  color: var(--clr-light-blue);
+  font-size: 1.2rem;
+}
+
+.services_table td {
+  color: var(--clr-white);
+  padding: 30px 0 0 0;
+}
+
+/* RESPONSIVE SERVICES */
+
+@media screen and (max-width: 1160px) {
+  .services_table {
+    white-space: nowrap;
+    overflow-x: scroll;
+  }
+
+  .services_table td {
+    padding: 30px 10px 0 10px;
+  }
+
+  .services_table th {
+    padding: 0 10px;
+  }
+}

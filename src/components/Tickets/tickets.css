@@ -1,0 +1,154 @@
+.col_107 {
+  width: 100%;
+  background-color: var(--clr-light-bg);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.col_support {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.question_hidden {
+  display: none;
+}
+
+.sc_question_hidden {
+  display: none;
+}
+
+.col_support:nth-child(1) {
+  margin-top: 0px;
+}
+
+.col_108 {
+  display: flex;
+  flex-direction: column;
+}
+
+.title_col_108 {
+  margin-bottom: 5px;
+}
+
+.title_col_108 p {
+  font-size: 1.2rem;
+  color: var(--clr-white);
+}
+
+.select_match {
+  position: relative;
+  padding: 4px;
+  min-height: 32px;
+  width: 500px;
+  background-color: var(--clr-light-blue);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.content_select {
+  padding: 0 4px;
+  user-select: none;
+}
+
+.fa_down {
+  position: absolute;
+  vertical-align: middle;
+  right: 0;
+  color: black;
+  margin-right: 10px;
+}
+
+.col_109 {
+  width: 500px;
+  max-height: 200px;
+  background-color: var(--clr-light-blue);
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.col_109-hidden {
+  display: none;
+}
+
+.col_110 {
+  padding: 4px 8px;
+  cursor: pointer;
+  width: 100%;
+  user-select: none;
+  background-color: var(--clr-light-blue);
+}
+
+.col_110:hover {
+  background-color: #b0d3ff;
+}
+
+.title_col_110 {
+  margin-bottom: 12px;
+}
+
+.col_110 p:nth-child(2) {
+  font-size: 12px;
+}
+
+.row_question {
+  cursor: pointer;
+  width: 100%;
+  user-select: none;
+  background-color: var(--clr-light-blue);
+}
+
+.row_question:hover {
+  background-color: #b0d3ff;
+}
+
+.title_question {
+  padding: 4px 8px;
+}
+
+.col_119 {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.col_119 p {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.col_119 textarea {
+  max-width: 500px;
+  height: 130px;
+  font-size: 1.1rem;
+  padding: 8px;
+}
+
+.col_119 input {
+  margin-top: 15px;
+  width: fit-content;
+  padding: 8px 25px;
+  background-color: var(--clr-blue-btn);
+  cursor: pointer;
+  color: white;
+}
+
+.col_119_hidden {
+  display: none;
+}
+
+/* RESPONSIVE TICKETS */
+
+@media screen and (max-width: 650px) {
+  .select_match {
+    width: 100%;
+  }
+
+  .col_109 {
+    width: 100%;
+  }
+}

@@ -1,0 +1,148 @@
+.col_120 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--clr-light-bg);
+  padding: 30px;
+}
+
+.row_120 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 10px 0;
+  width: 1200px;
+}
+
+.col_121 {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.title_col_121 {
+  display: flex;
+}
+
+.title_col_121 p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.col_122 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.row_121 {
+  position: relative;
+  padding-bottom: 20px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.row_121::after {
+  position: absolute;
+  width: 100%;
+  background-color: var(--clr-light-blue);
+  content: '';
+  height: 1px;
+  bottom: 0;
+}
+
+.row_121 h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0;
+  color: var(--clr-light-blue);
+}
+
+.arrow_faq {
+  position: absolute;
+  border: solid var(--clr-light-blue);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 6px;
+}
+
+.arrow_down_faq {
+  right: 2px;
+  top: 3px;
+  transform: rotate(45deg);
+  transition: 0.2s;
+  will-change: transform;
+}
+
+.arrow_up_faq {
+  right: 2px;
+  top: 9px;
+  transform: rotate(-135deg);
+  transition: 0.2s;
+  will-change: transform;
+}
+
+.faq_answer {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.faq_answer_active {
+  max-height: 1000px;
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.col_122 p {
+  color: white;
+  padding-top: 30px;
+}
+
+.btn_faq {
+  display: flex;
+  margin-top: 40px;
+}
+
+.btn_faq a {
+  padding: 8px 30px;
+  background: var(--clr-blue-btn);
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: white;
+}
+
+/* RESPONSIVE FAQ */
+
+@media screen and (max-width: 1690px) {
+  .row_120 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .row_121 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .arrow_faq {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .row_121 h4 {
+    font-size: 1.1rem;
+  }
+
+  .arrow_faq {
+    padding: 5px;
+    border: 0 2px 2px 0;
+  }
+}

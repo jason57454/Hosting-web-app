@@ -1,0 +1,109 @@
+.title_order {
+  margin-bottom: 20px;
+}
+
+.title_order h2 {
+  font-size: 2rem;
+  color: var(--clr-white);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.title_order p {
+  font-size: 1rem;
+  color: var(--clr-white);
+  opacity: 0.8;
+}
+
+.row_49 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.box_order {
+  width: 460px;
+  background-color: var(--clr-light-bg);
+  border-radius: 10px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.row_50 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.col_47 {
+  display: flex;
+  flex-direction: column;
+}
+
+.col_47 h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--clr-white);
+  margin-bottom: 15px;
+}
+
+.col_47 p {
+  color: var(--clr-light-blue);
+  font-size: 1.2rem;
+}
+
+.prices p {
+  font-size: 1.2rem;
+  color: var(--clr-white);
+  font-weight: 700;
+}
+
+.prices span {
+  color: var(--clr-light-blue);
+}
+
+.margin_0 {
+  margin: 0 !important;
+}
+
+.purchase_btn {
+  display: flex;
+  width: fit-content;
+}
+
+.purchase_btn a {
+  padding: 8px 30px;
+  background: var(--clr-blue-btn);
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+/* RESPONSIVE ORDER */
+
+@media screen and (max-width: 550px) {
+  .row_49 {
+    width: 100%;
+  }
+
+  .box_order {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .title_order h2 {
+    font-size: 1.5rem;
+  }
+
+  .col_47 h2 {
+    font-size: 1.2rem;
+  }
+
+  .col_47 p {
+    font-size: 1rem;
+  }
+
+  .prices {
+    padding-left: 10px;
+  }
+}

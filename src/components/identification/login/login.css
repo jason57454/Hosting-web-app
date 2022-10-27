@@ -1,0 +1,167 @@
+.login {
+  width: 100%;
+  padding: 100px 0;
+  background-color: #1c1c1d;
+}
+
+.login_box {
+  width: 540px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.row_7 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+
+.sign_btn {
+  display: flex;
+  cursor: pointer;
+  padding: 15px 60px;
+}
+
+.top_left {
+  background: #2d2d2e;
+}
+
+.top_right {
+  background: #171718;
+}
+
+.sign_btn p {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* DEBUT LOGIN ET REGISTER  */
+
+.container_col_8 {
+  width: 100%;
+}
+
+.col_8 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 40px;
+  background-color: #2d2d2e;
+  border-radius: 10px;
+}
+
+.col_9 {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin: 20px 0;
+}
+
+.wrapper_col_9 {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 100%;
+}
+
+.wrapper_col_9 p {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.wrapper_col_9 input {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  border-color: transparent;
+  font-size: 1.1rem;
+  padding: 0 10px;
+}
+
+.row_8 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.row_9 {
+  display: flex;
+  align-items: center;
+}
+
+.row_9 input {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.row_9 p {
+  font-size: 1.1rem;
+  color: white;
+}
+
+/* FIN LOGIN ET REGISTER  */
+
+.log_btn {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: #2d2d2e;
+}
+
+.forgot_password {
+  cursor: pointer;
+}
+
+.forgot_password p {
+  color: rgb(79 70 229);
+}
+
+.signIn_btn {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  margin-top: 40px;
+  background: #0d6efd;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  font-size: 1.1rem;
+  width: 100%;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 550px) {
+  .login_box {
+    width: 100%;
+  }
+
+  .col_8 {
+    padding: 30px 20px;
+  }
+
+  .row_8 {
+    flex-direction: column;
+    width: 100%;
+    align-items: baseline;
+  }
+
+  .forgot_password {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .sign_btn {
+    padding: 15px;
+  }
+}

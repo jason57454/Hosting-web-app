@@ -1,0 +1,249 @@
+.col_113 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-light-bg);
+  padding: 30px;
+  width: 100%;
+}
+
+.row_110 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+}
+
+.col_114 {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.row_111 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.left_row_111 p {
+  color: var(--clr-light-blue);
+  font-size: 1rem;
+  font-weight: 700;
+  width: 250px;
+}
+
+.right_row_111 p {
+  color: var(--clr-white);
+  font-size: 1rem;
+  width: 250px;
+  text-align: center;
+}
+
+.col_115 {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.title_col_115 {
+  margin-bottom: 20px;
+}
+
+.title_col_115 p {
+  font-size: 2rem;
+  color: var(--clr-white);
+}
+
+.send_msg {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.col_msg {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.row_msg {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.row_msg button:nth-child(1) {
+  margin-left: 0;
+  background-color: rgb(244, 33, 46);
+  color: var(--clr-white);
+  margin-bottom: 20px;
+}
+
+.row_msg button:nth-child(2) {
+  margin-left: 0;
+  background-color: var(--clr-blue-btn);
+  color: var(--clr-white);
+}
+
+.row_msg button {
+  margin: 0 10px;
+  width: 150px;
+  padding: 8px 25px;
+  border-radius: 10px;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.col_115 textarea {
+  max-width: 100%;
+  min-width: 100%;
+  height: 200px;
+  border-color: transparent;
+  font-size: 1.2rem;
+  padding: 4px;
+}
+
+.col_116 {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.container_tickets {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--clr-border);
+  border-radius: 10px;
+  width: 100%;
+}
+
+.row_112 {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.col_117 {
+  display: flex;
+  flex-direction: column;
+}
+
+.col_118 {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.row_113 {
+  display: flex;
+}
+
+.row_113:nth-child(2) {
+  align-self: flex-end;
+}
+
+.row_113 p {
+  font-weight: 700;
+  color: var(--clr-light-blue);
+  font-size: 1.1rem;
+  margin-right: 15px;
+}
+
+.row_113 span {
+  color: var(--clr-white);
+  font-size: 1.1rem;
+}
+
+.content_tickets {
+  margin: 20px 0;
+}
+
+.content_tickets p {
+  color: var(--clr-white);
+  font-size: 1.1rem;
+  line-height: 30px;
+}
+
+/* RESPONSIVE TICKETS ID */
+
+@media screen and (max-width: 1600px) {
+  .row_110 {
+    width: 100%;
+  }
+
+  .col_114 {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .right_row_111 p {
+    width: auto;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .send_msg {
+    flex-direction: column;
+  }
+
+  .col_msg {
+    width: 100%;
+  }
+
+  .row_msg {
+    margin-left: 0;
+    margin-top: 20px;
+    flex-direction: row;
+  }
+
+  .row_msg button:nth-child(1) {
+    margin-bottom: 0;
+  }
+
+  .col_116 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .row_110 {
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .col_114 {
+    width: 100%;
+  }
+
+  .right_row_111 p {
+    margin-right: 0px;
+  }
+
+  .left_row_111 p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .row_msg {
+    flex-direction: column-reverse;
+  }
+
+  .row_msg button {
+    width: 100%;
+  }
+
+  .row_msg button:nth-child(1) {
+    margin-top: 10px;
+  }
+
+  .title_col_115 p {
+    font-size: 1.5rem;
+  }
+}
